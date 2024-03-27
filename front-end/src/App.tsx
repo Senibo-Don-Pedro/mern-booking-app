@@ -6,6 +6,7 @@ import { AddHotel } from "./pages/AddHotel";
 import { EditHotel } from "./pages/EditHotel"
 import { useAppContext } from "./context/AppContext";
 import { MyHotels } from "./pages/MyHotels";
+import { Search } from "./pages/Search";
 
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
         }/>
         <Route path="/search" element={
           <Layout>
-            <p>Search Page</p>
+            <Search/>
           </Layout>
         }/>
         <Route path="/register" element={
