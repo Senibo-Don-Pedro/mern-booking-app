@@ -7,6 +7,7 @@ import { EditHotel } from "./pages/EditHotel"
 import { useAppContext } from "./context/AppContext";
 import { MyHotels } from "./pages/MyHotels";
 import { Search } from "./pages/Search";
+import { Detail } from "./pages/Detail.tsx"
 
 
 const App = () => {
@@ -22,6 +23,11 @@ const App = () => {
         <Route path="/search" element={
           <Layout>
             <Search/>
+          </Layout>
+        }/>
+        <Route path="/detail/:hotelId" element={
+          <Layout>
+            <Detail/>
           </Layout>
         }/>
         <Route path="/register" element={
